@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>OBEJTIVOS DE DESARROLLO SOSTENIBLE</title>
+<link th:href="@{/css/miEstilo.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+</head>
+
+
+<!-- contenido -->
+<body>
+
+
+	<div class="container">
+		<div th:insert="/layouts/header :: header"></div>
+
+<!-- AVISO Y ASIDE -->
+
+
+				<section class="aviso">
+
+
+			<div class="container w-30">
+
+				<div class="row justify-content-md-center py-3">
+					<div class="col text-center">
+						<p class="text">Este sitio tiene el próposito de mostrar
+							novedades e informacion acerca de los diferentes cursos dictados
+							por profesores de todo el mundo.</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<aside class="container-fluid">
+			<div id="noticia" class="container w-70 pl-5">
+
+				<div class="row align-items-center">
+
+
+					<div class="col-sm text-light p-3 text-center">
+						<p>
+							PARA ESTUDIANTES <br> Impulsa tu carrera, obtén un título o
+							amplía tu conocimiento desde cualquier nivel. Ver todos los
+							cursos y programas <br> PARA EMPRESAS <br> Mejora las
+							habilidades de los empleados y desarrolla una cultura de
+							aprendizaje. Ir a edX para negocios <br> PARA INSTITUCIONES
+							EDUCATIVAS <br> Amplía tu plan de estudios mediante el
+							aprendizaje mixto.
+						</p>
+					</div>
+
+					<div class="col-sm p-3">
+						<img src="img/aprendiendo.jpg"
+							class="w-100 rounded-circle mx-auto d-block" alt="">
+					</div>
+
+
+				</div>
+
+			</div>
+		</aside>
+		
+
+<!-- AVISO Y ASIDE -->
+
+
+<!-- CURSOS -->
+
+		<section class="cursos">
+			<div class="container-md w-30 p-5">
+
+				<div class="row">
+					<h3 class="text-center h1">CURSOS</h3>
+				</div>
+
+				<div class="row">
+
+					
+					<div class="col-6 col-sm pt-5">
+						<div class="card h-100 card-border" style="width: 100%;">
+							<img src="./img/disenoweb.jpg" height="300px"
+								class="card-img-top" alt="" >
+							<div class="card-body">
+								<h5 class="card-title">DISEÑO WEB</h5>
+								<p class="card-text">Con este curso sin coste te introducirás en el diseño de páginas web de manera profesional. En la primera parte del curso aprenderás cómo nació la Web y cómo ha llegado a ser lo que es hoy. Serás capaz de crear páginas web correctas de manera profesional utilizando HTML5.</p>
+								<a href="https://youtu.be/bYOjmW-740M" target="_blank"
+									class="btn btn-primary">Leer más</a>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="col-6 col-sm pt-5">
+						<div class="card h-100 card-border" style="width: 100%;">
+							<img src="./img/disenografico.jpg" height="200px"
+								class="card-img-top" alt="">
+							<div class="card-body">
+								<h5 class="card-title">DISEÑO GRÁFICO</h5>
+								<p class="card-text">En este curso de diseño gráfico aprenderás los fundamentos del dibujo y sus aplicaciones en el diseño digital, para llevar a cabo la proyección de comunicaciones visuales dirigidos a la transmisión de mensajes específicos a grupos sociales. Es fácil de aprender y solo se requiere tener conocimientos elementales.</p>
+								<a href="https://youtu.be/RKuCTUCEPis"
+									target="_blank" class="btn btn-primary">Leer más</a>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="col-6 col-sm pt-5">
+						<div class="card h-100 card-border">
+							<img src="./img/marketing.jpg" height="200px" class="card-img-top" alt="">
+							<div class="card-body">
+								<h5 class="card-title">MARKETING DIGITAL</h5>
+								<p class="card-text">Aprenderás los conceptos claves del marketing digital y las ventajas frente a estrategias tradicionales. Preparate para implementar campañas en Google, Facebook e Instagram Ads, desarrollar contenido para Social Media, posicionar mejor los sitios web orgánicamente (SEO), medir todo con Google Analytics, y mucho más.
+
+Corré la campaña de tu futuro. </p>
+								<a
+									href="https://youtu.be/artZsPRGX-c"
+									target="_blank" class="btn btn-primary">Leer más</a>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="col-6 col-sm pt-5">
+						<div class="card h-100 card-border">
+							<img src="./img/gastronomia.jpg" height="300px" class="card-img-top" alt="">
+							<div class="card-body">
+								<h5 class="card-title">GASTRONOMIA</h5>
+								<p class="card-text">Si sos de los que dan vueltas en la cocina sin saber qué cocinar, Educación Master Chef Online es para vos. Aprenderás rápido y fácil, todos los secretos de la gastronomía, con técnicas de nivel internacional explicadas paso a paso por profesionales premiados mundialmente.</p>
+								<a href="https://youtu.be/j_8AvR3Hi0oE"
+									target="_blank" class="btn btn-primary">Leer más</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+	
+	</section>
+	
+<!-- CURSOS -->
+
+
+<!-- footer -->
+<div th:insert="/layouts/footer :: footer"></div>
+	
+<!-- footer -->
+
+	</div>
+	
+</body>
+
+</html>
