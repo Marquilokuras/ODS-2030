@@ -1,7 +1,7 @@
 @charset "ISO-8859-1";
-
+ 
 body{
-	background:url("/img/nuevofondo2.jpg");
+	background:url("/video/Stripes.mp4");
 	background-repeat: no-repeat;
 	background-size: 500% 500%;
 }
@@ -33,7 +33,7 @@ aside {
 /* CURSOS */
 
 .cursos {
-    background: url(/img/cursos.jpg);
+    background: url(/video/Stripes.mp4);
     background-size: 100%;
 }
 
