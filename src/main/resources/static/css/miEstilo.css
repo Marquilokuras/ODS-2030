@@ -1,9 +1,8 @@
 @charset "ISO-8859-1";
  
 body{
-	background:url("/video/Stripes.mp4");
-	background-repeat: no-repeat;
-	background-size: 500% 500%;
+	background:url("/img/fondo.jpg");
+	background-size: 100% 100%;
 }
 
 .navbar {
