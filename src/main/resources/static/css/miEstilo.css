@@ -1,9 +1,8 @@
 @charset "ISO-8859-1";
  
 body{
-	background:url("/video/Stripes.mp4");
-	background-repeat: no-repeat;
-	background-size: 500% 500%;
+	background:url("/img/fondo.jpg");
+	background-size: 100% 100%;
 }
 
 .navbar {
@@ -14,6 +13,13 @@ label{
 	font-size:25px;
 	color:yellow;
 	display: flex;
+}
+
+ol{
+	color:green;
+    font-family: Arial;
+	font-size:20px;
+	font-weight:400;
 }
 
 /* aviso y aside */
@@ -29,13 +35,6 @@ aside {
 }
 
 /* aviso y aside */
-
-/* CURSOS */
-
-.cursos {
-    background: url(/video/Stripes.mp4);
-    background-size: 100%;
-}
 
 h3 {
     color: rgb(40, 29, 143);
@@ -57,8 +56,6 @@ h3 {
 .card-text {
 	color: black;
 }
-
-/* CURSOS */
 
 /* footer */
 .footer {
