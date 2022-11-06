@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width-device-width,initial-scale-1.0">
+<link rel="shortcut icon" href="img/ODS.png">
+<title>ERROR</title>
+<link th:href="@{/css/miEstilo.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}"
+	rel="stylesheet" type="text/css">
+</head>
+
+<div th:insert="layouts/header0 :: header"></div>
+
+<body>
+
+	<div class="container">
+
+
+		<br> <br>
+
+		<section class="text-error">
+			<div class="container w-80">
+				<div class="row justify-content-md-center py-3">
+					<div class="col text-center">
+						<p class="text">Error: El recurso requerido no se encuentra disponible en este momento</p>
+						<img alt="" src="../img/error404.PNG" class="imagenError">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="row">
+			<div class="col text-center">
+				<button onclick="location.href='/index'" type="button" class="btn btn-outline-primary">Volver</button>
+			</div>
+		</div>
+
+		<section class="alerta">
+			<div class="container w-50">
+				<div class="row justify-content-md-center py-3">
+					<div class="col text-center">
+						<div class="col text-center alert alert-danger" role="alert">
+							<h5>Consulte al servicio técnico</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</div>
+
+	<footer>
+		<div th:insert="/layouts/footer :: footer"></div>
+	</footer>
+</body>
+
+</html>
