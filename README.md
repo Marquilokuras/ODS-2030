@@ -8,4 +8,4 @@
 
 **- Emilia Valeriano**
 
--   Link del repositorio: `https://github.com/BarrierHT/TPN6-POO`
+-   Link del repositorio: `[https://github.com/BarrierHT/TPN6-POO](https://github.com/Marquilokuras/ODS-2030.git)`
