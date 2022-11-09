@@ -46,5 +46,17 @@ public class PrincipalController {
 
 		return "queHacemos";
 	}
+	
+	@GetMapping("/minas")
+	public String getMinas() {
+
+		return "minas";
+	}
+	
+	@GetMapping("/quimica")
+	public String getQuimica() {
+
+		return "quimica";
+	}
 
 }

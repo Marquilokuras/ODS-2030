@@ -56,6 +56,16 @@ h3 {
 	color: black;
 }
 
+div.container12{
+	color: #fb9553;
+}
+
+img{
+	margin: auto;
+  	width: 640px; 
+  	padding: 50px;
+}
+
 /* footer */
 .footer {
 	background-color: #000;
