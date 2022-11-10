@@ -1,10 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width-device-width,initial-scale-1.0">
+<link rel="shortcut icon" href="img/ODS.png">
+<title>ODS MINAS</title>
+<link th:href="@{/css/miEstilo.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}"
+	rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
+	<div class="container">
+		<div th:insert="/layouts/header :: header"></div>
+
+		<!-- AVISO Y ASIDE -->
+
+		<section class="aviso">
+			<div class="container w-30">
+				<div class="row justify-content-md-center py-3">
+					<div class="col text-center">
+						<p class="text">Este sitio tiene el próposito de mostrar
+							novedades e informacion acerca de los objetivos de desarrollo
+							sostenible</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- AVISO Y ASIDE -->
+		<div class="minas">
+		<br>
+		<h3>OBJETIVOS DE DESARROLLO SOSTENIBLE - MINAS</h3>
+		<br>
+		
+			<img src="img/ODS1A.jfif" alt=""> <a class="ripple"
+				href="https://docs.google.com/document/d/1Q2j0FDeaolB4VMjdl7S9SDoQqBd_j1AFPolbdoiKbYI/edit?usp=sharing"
+				target="_blank"> <img alt="example" class="img-fluid rounded"
+				src="img/ODS 1.png" />
+			</a> <br> <img src="img/ODS2A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 2.png" />
+			</a> <br> <img src="img/ODS3A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 3.png" />
+			</a> <br> <img src="img/ODS4A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 4.png" />
+			</a> <br> <img src="img/ODS5A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 5.png" />
+			</a> <br> <img src="img/ODS6A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 6.png" />
+			</a> <br> <img src="img/ODS7A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 7.1.png" />
+			</a> <br> <img src="img/ODS8A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 8.png" />
+			</a> <br> <img src="img/ODS9A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 9.png" />
+			</a> <br> <img src="img/ODS10A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 10.png" />
+			</a> <br> <img src="img/ODS11A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 11.png" />
+			</a> <br> <img src="img/ODS12A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 12.1.png" />
+			</a> <br> <img src="img/ODS13A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 13.png" />
+			</a> <br> <img src="img/ODS14A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 14.png" />
+			</a> <br> <img src="img/ODS15A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 15.1.png" />
+			</a> <br> <img src="img/ODS16A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 16.png" />
+			</a> <br> <img src="img/ODS17A.jfif" alt=""> <a class="ripple"
+				href="" target="_blank"> <img alt="example"
+				class="img-fluid rounded" src="img/ODS 17.png" />
+			</a>
+		</div>
+
+
+		<!-- footer -->
+		<div th:insert="/layouts/footer :: footer"></div>
+		<!-- footer -->
+
+	</div>
 </body>
+
 </html>
