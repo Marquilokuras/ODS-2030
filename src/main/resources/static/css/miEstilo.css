@@ -1,6 +1,6 @@
 @charset "ISO-8859-1";
- 
-body{
+
+body {
 	background-color: rgb(49, 47, 47);
 	background-size: 100% 100%;
 }
@@ -9,71 +9,71 @@ body{
 	background-color: rgb(49, 47, 47);
 }
 
-label{
-	font-size:25px;
-	color:yellow;
+label {
+	font-size: 25px;
+	color: yellow;
 	display: flex;
 }
 
-ol{
-	color:green;
-    font-family: Arial;
-	font-size:30px;
-	font-weight:400;
+ol {
+	color: green;
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: 400;
 }
 
 /* aviso y aside */
-
 .aviso {
 	background: #000;
 	color: #fff;
 }
 
 aside {
-    background-color: rgb(13, 19, 37);
-    background-image: repeating-linear-gradient(45deg,transparent,transparent 25px, rgba(3, 3, 3, 0.5) 25px,rgba(41, 21, 131, 0.5) 40px);
+	background-color: rgb(13, 19, 37);
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(3,
+		3, 3, 0.5) 25px, rgba(41, 21, 131, 0.5) 40px);
 }
 
 /* aviso y aside */
-
 h3 {
-    color: rgb(40, 29, 143);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: rgb(40, 29, 143);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .card-border {
-    border: solid 3px #000;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all ease-out 0.2s;
+	border: solid 3px #000;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all ease-out 0.2s;
 }
 
 .card-border:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .card-text {
 	color: black;
 }
 
-div.container12{
+div.container12 {
 	color: #fb9553;
 }
 
-img{
+img {
+	display: block;
 	margin: auto;
-  	width: 640px; 
-  	padding: 50px;
-  	display: flex;
-  justify-content: center;
+	width: 800px;
+	padding: 10px;
+	justify-content: center;
 }
 
 /* Minas */
-div.minas {
-  margin: auto;
-  justify-content: center;
-  max-width:50%;
-  max-height:50%;
+div.img-fluid rounded {
+	display: block;
+	margin: auto;
+	width: 800px;
+	padding: 10px;
+	justify-content: center;
 }
 
 /* footer */
