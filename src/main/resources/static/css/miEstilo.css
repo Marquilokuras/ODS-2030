@@ -16,7 +16,7 @@ label {
 }
 
 ol {
-	color: green;
+	color: red;
 	font-family: Arial;
 	font-size: 30px;
 	font-weight: 400;
@@ -73,6 +73,11 @@ div.img-fluid rounded {
 	margin: auto;
 	width: 800px;
 	padding: 10px;
+	justify-content: center;
+}
+
+.alternativo {
+	color: #CC0000;
 	justify-content: center;
 }
 
