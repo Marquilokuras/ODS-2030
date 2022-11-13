@@ -119,10 +119,10 @@ public class PrincipalController {
 		return "obj18";
 	}
 
-	@GetMapping("equipo")
+	@GetMapping("/index3")
 	public String getEquipo() {
 
-		return "equipo";
+		return "index3";
 	}
 
 	@GetMapping("/queHacemos")
