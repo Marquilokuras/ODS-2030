@@ -1,978 +1,342 @@
 <!DOCTYPE html>
-<html>
-
+<html xlmns:th="http://www.thymeleaf.org">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width-device-width,initial-scale-1.0">
 
-  <title>OBJETIVOS DE DESARROLLO SUSTENTABLE</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link rel="shortcut icon" href="img/ODS.png">
+<title>OBJETIVOS DE DESARROLLO SOSTENIBLE</title>
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="./css/miEstilo.css">
+<link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}"
+	rel="stylesheet" type="text/css">
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
+<!-- contenido -->
 <body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <section class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container d-lg-none">
-          <a class="navbar-brand" href="#">
-            <div class="logo-box">
-              <img src="images/logo.png" alt="">
-              <span>
-                OBJETIVO DE DESARROLLO SUSTENTABLE
-              </span>
-            </div>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> Sobre nosotros </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html"> Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html"> Informacionn </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="company.html">¿Que hacemos?  </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="contact.html">Contactanos</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="header_container ">
-          <div class="logo-box">
-            <img src="images/logo.png" alt="">
-            <span>
-              ODS
-            </span>
-          </div>
-          <div>
-            <div class="header_top">
-              <div class="header_top-contact">
-
-                <a href="" class="ml-4">
-                  <div>
-                    <img src="images/phone.png" alt="" />
-                  </div>
-                  <span>
-                    3885014256
-                  </span>
-                </a>
-                <a href="" class="ml-4">
-                  <div>
-                    <img src="images/mail.png" alt="" />
-                  </div>
-                  <span>
-                    crisrueda@gmail.com
-                  </span>
-                </a>
-              </div>
-              <div class="header_top-social">
-                <div>
-                  <a href="">
-                    <img src="images/fb.png" alt="">
-                  </a>
-                </div>
-                <div>
-                  <a href="">
-                    <img src="images/twitter.png" alt="">
-                  </a>
-                </div>
-                <div>
-                  <a href="">
-                    <img src="images/g-plus.png" alt="">
-                  </a>
-                </div>
-                <div>
-                  <a href="">
-                    <img src="images/linkedin.png" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="header_btm">
-              <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-                    <ul class="navbar-nav  ">
-                      <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> Sobre nosotros </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html"> Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html"> Informacionn </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="company.html">¿Que hacemos?  </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="contact.html">Contactanos</a>
-              </li>
-                    </ul>
-
-                  </div>
-
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end header section -->
-
-    <!-- slider section -->
-    <section class=" slider_section ">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        
-        
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="slider_item-container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="slider_item-detail">
-                      <div class="slider_form-box">
-                        <form action="">
-                          <div class="search_input">
-                            <input type="text">
-                            <img src="images/search-icon.png" alt="">
-                          </div>
-
-                          
-                        </form>
-                      </div>
-                      <div>
-                        <h1>
-                          Buscando <br>
-                          Mejorar y Ayudar a <br>
-                          Nuestro Planeta y a Nosotros 
-                        </h1>
-
-                        <div class="d-flex">
-                          <div>
-                            <a href="" class="read-btn">
-
-                              <span>
-                                Leer mas
-                              </span>
-                              <img src="images/white-next.png" alt="">
-                            </a>
-                          </div>
-                          <div class="ml-3">
-                            <a href="" class="quote-btn">
-
-                              <span>
-                                Ver un video
-                              </span>
-                              <img src="images/white-next.png" alt="">
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="slider_img-box">
-                      <img src="images/truck.png" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-          
-          
-          <div class="carousel-item">
-            <div class="container">
-              <div class="slider_item-container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="slider_item-detail">
-          
-                      <div>
-                        <h1>
-                         Buscando <br>
-                          Mejorar y Ayudar a <br>
-                          Nuestro Planeta y a Nosotros
-                        </h1>
-
-                        <div class="d-flex">
-                          <div>
-                            <a href="" class="read-btn">
-
-                              <span>
-                                Leer Mas
-                              </span>
-                              <img src="images/white-next.png" alt="">
-                            </a>
-                          </div>
-                          <div class="ml-3">
-                            <a href="" class="quote-btn">
-
-                              <span>
-                                Ver un video
-                              </span>
-                              <img src="images/white-next.png" alt="">
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="slider_img-box">
-                      <img src="images/truck.png" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-          
-          
-          <div class="carousel-item">
-            <div class="container">
-              <div class="slider_item-container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="slider_item-detail">
-          
-                      <div>
-                        <h1>
-                         Buscando <br>
-                          Mejorar y Ayudar a <br>
-                          Nuestro Planeta y a Nosotros
-                        </h1>
-
-                        <div class="d-flex">
-                          <div>
-                            <a href="" class="read-btn">
-
-                              <span>
-                                Leer Mas
-                              </span>
-                              <img src="images/white-next.png" alt="">
-                            </a>
-                          </div>
-                          <div class="ml-3">
-                            <a href="" class="quote-btn">
-
-                              <span>
-                                Ver un video
-                              </span>
-                              <img src="images/white-next.png" alt="">
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="slider_img-box">
-                      <img src="images/truck.png" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-          
-          
-          
-          <div class="carousel-item">
-            <div class="container">
-              <div class="slider_item-container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="slider_item-detail">
-          
-                      <div>
-                        <h1>
-                         Buscando <br>
-                          Mejorar y Ayudar a <br>
-                          Nuestro Planeta y a Nosotros
-                        </h1>
-
-                        <div class="d-flex">
-                          <div>
-                            <a href="" class="read-btn">
-
-                              <span>
-                                Leer Mas
-                              </span>
-                              <img src="images/white-next.png" alt="">
-                            </a>
-                          </div>
-                          <div class="ml-3">
-                            <a href="" class="quote-btn">
-
-                              <span>
-                                Ver un video
-                              </span>
-                              <img src="images/white-next.png" alt="">
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="slider_img-box">
-                      <img src="images/truck.png" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
-    <!-- end slider section -->
+	<div class="container">
+		<div th:insert="/layouts/header :: header"></div>
+		<!--========================================================== -->
+                        <!-- SLIDER DE IMAGENES-->
+    <!--========================================================== -->
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.un.org/sites/un2.un.org/files/field/image/children-uttar_pradesh-india.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://ipsnoticias.net/wp-content/uploads/2020/07/Hambre-aliment-Unicef-Laos-Jacqueline-Labrador.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://sites.google.com/site/planetanetatierra/_/rsrc/1540518377472/home/introduccion/1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://tarannaresponsable.com/wp-content/uploads/ODS-16.-1038x576.jpg" class="d-block w-100" alt="...">
+    </div>
+    
   </div>
 
-  <!-- about section -->
-  <section class="about_section ">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="heading_style">
-            About Us
-          </h2>
-          <p>
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco
-          </p>
+    
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Leer mas</span>
+        </button>
+      </div>    
+    
+   </div> 
+     <!--========================================================== -->
+                        <!-- INTRODUCCION DE SERVICIOS-->
+    <!--========================================================== -->
+
+        <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Este sitio tiene el próposito de mostrar
+							novedades e informacion acerca de los <span class="text-primary">Objetivo de Desarrollo Sostenible<span/></h1>
+     <p class="p-3  fs-4">
+         <span class="text-primary">NUESTRO OBJETIVO GENERAL</span> es que los estudiantes puedan consolidar,
+							integrar y/o ampliar las capacidades y saberes que se
+							corresponden a las carreras de Técnico Informático, Técnico
+							Químico y Técnico en Minas vinculadas con la Agenda 2030 y los
+							Objetivos de Desarrollo Sostenible (ODS).        
+     </p>   
+    </section>
+
+
+		<section id="acordeon">
+
+      <details>
+         <summary>¿Que son los ODS?</summary>
+         <p>Los Objetivos de Desarrollo Sostenible, o también conocido
+			por sus siglas ODS, fueron adoptados por las Naciones Unidas en el
+			año 2015 como un llamado global para proteger nuestro planeta y
+			asegurar que todas las personas tengan paz y prosperidad para 2030.
+			Se basa en 17 objetivos que sirven para solventar las principales
+			problemáticas mundiales actuales, desde la pobreza y la desigualdad
+			hasta el cambio climático. En pocas palabras es un mapa de trabajo
+			para conseguir un mundo y futuro sostenible para todos.</p>
+      </details>
+
+      <details>
+         <summary>¿Para que sirven los ODS?</summary>
+         <p>Los Objetivos de Desarrollo Sostenible consisten en instar a
+			todos los países, ya sean ricos, pobres o de ingresos medianos, a
+			adoptar medidas para promover la prosperidad al tiempo que protegen
+			el planeta. Reconocen que las iniciativas para acabar con la pobreza
+			deben ir de la mano de estrategias que favorezcan el crecimiento
+			económico y aborden una serie de necesidades sociales, entre las que
+			cabe señalar la educación, la salud, la protección social y las
+			oportunidades de empleo, a la vez que luchan contra el cambio
+			climático y promueven la protección del medio ambiente.</p>
+      </details>
+
+      <details>
+         <summary>¿Quién decide los objetivos de desarrollo sostenible?</summary>
+         <p>Los líderes mundiales en el marco de las Naciones Unidas son los que deciden estos objetivos teniendo en cuenta los principales retos a los que se enfrenta el conjunto de la humanidad.</p>
+      </details>
+
+
+		<details>
+         <summary>¿De dónde provienen?</summary>
+         <p>Los Objetivos Mundiales reemplazan a los Objetivos de Desarrollo del Milenio (ODM), los cuales se establecieron hace 15 años y reunieron al mundo en torno a un programa común: abordar la indignidad de la pobreza. </p>
+      </details>
+      
+   </section >
+		
+		<!--CARTASSSSSSSSS-->
+		
+		<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-container mySwiper">
+        
+		<div class="title-cards">
+		<h2>Objetivos de Desarrollo Sustentable</h2>
+	</div>
+	
+<div class="container-card">
+	
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sustainable_Development_Goal-es-17.jpg/245px-Sustainable_Development_Goal-es-17.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Fin de la Pobreza</h3>
+		<p>Poner fin a la pobreza en todas sus formas en todo el mundo</p>
+		<a href="obj1.html">Leer Màs</a>
+	</div>
+</div>
+
+
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Sustainable_Development_Goal-es-16.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Hambre Cero</h3>
+		<p>Poner fin al hambre, lograr la seguridad alimentaria y la mejora de nutrición y promover la agricultura sostenible.</p>
+		<a href="obj2.html">Leer Màs</a>
+	</div>
+</div>
+
+
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sustainable_Development_Goal-es-15.jpg/1200px-Sustainable_Development_Goal-es-15.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Salud y Bienestar</h3>
+		<p>Garantizar una vida sana y promover el bienestar para todos en todas las edades.</p>
+		<a href="obj3.html">Leer Màs</a>
+	</div>
+</div >
+
+<div class="card" >
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sustainable_Development_Goal-es-14.jpg/1200px-Sustainable_Development_Goal-es-14.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Educacion de Calidad</h3>
+		<p>Garantizar una educación inclusiva, equitativa y de calidad y promover oportunidades de aprendizaje y durante toda la vida para todos.</p>	
+	    <a href="obj4.html">Leer Màs</a>
+	</div>
+</div>
+</div>
+<div class="container-card">
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Sustainable_Development_Goal-es-13.jpg/1200px-Sustainable_Development_Goal-es-13.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Igualdad de Genero</h3>
+		<p>Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas</p>
+		<a href="obj5.html">Leer Màs</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Sustainable_Development_Goal-es-12.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Agua Limpia y Saneamientor</h3>
+		<p>Garantizar la disponibilidad de agua y su gestión sostenible y el saneamiento para todos.</p>
+		<a href="obj6.html">Leer Màs</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sustainable_Development_Goal-es-11.jpg/1200px-Sustainable_Development_Goal-es-11.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Energia Asequible y no contaminante</h3>
+		<p>Garantizar el acceso a una energía
+									asequible, segura, sostenible y moderna para todos.</p>
+		<a href="obj7.html">Leer Màs</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Sustainable_Development_Goal-es-10.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Trabajo Decente y Crecimiento Economico</h3>
+		<p>Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos.</p>
+		<a href="obj8.html">Leer Màs</a>
+	</div>
+</div>
+</div>
+
+<div class="container-card">
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Sustainable_Development_Goal-es-09.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Industria, Innovacion e Infraestructura</h3>
+		<p>Promover el desarrollo de industria, innovación e infraestructuras.</p>
+		<a href="obj9.html">Leer Màs</a>
+	</div>
+</div>
+	
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sustainable_Development_Goal-es-08.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Reduccion de las Desigualdades</h3>
+		<p>Reducir la desigualdad en y entre los países.</p>
+		<a href="obj10.html">Leer Màs</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Sustainable_Development_Goal-es-07.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Ciudades y Comunidades Sostenibles</h3>
+		<p>Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles.</p>
+		<a href="obj11.html">Leer Màs</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Sustainable_Development_Goal-es-06.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Produccion y Consumo Responsables</h3>
+		<p>Garantizar modalidades de consumo y
+									producción sostenibles.</p>
+		<a href="obj12.html">Leer Màs</a>
+	</div>
+</div>
+
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sustainable_Development_Goal-es-05.jpg/1200px-Sustainable_Development_Goal-es-05.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Accion por el Clima</h3>
+		<p>Adoptar medidas urgentes para combatir el cambio climático y sus efectos.</p>
+		<a href="obj13.html">Leer Màs</a>
+	</div>
+</div>
         </div>
+        
+        <div class="container-card">	
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Sustainable_Development_Goal-es-04.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Vida Submarina</h3>
+		<p>Conservar y utilizar en forma sostenible los océanos, los mares y los recursos marino para el desarrollo sostenible.</p>
+		<a href="obj14.html">Leer Màs</a>
+	</div>
+</div>
 
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="about_img-box">
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sustainable_Development_Goal-es-03.jpg/1200px-Sustainable_Development_Goal-es-03.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Vida de Ecosistemas Terrestres</h3>
+		<p>Gestionar sosteniblemente los bosques,
+									luchar contra la desertificación, detener e invertir la
+									degradación de las tierras y detener la pérdida de
+									biodiversidad.</p>
+		<a href="obj15.html">Leer Màs</a>
+	</div>
+</div>
 
-            <img src="images/a-truck.jpg" alt="" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-6 about_detail-container">
-          <div class="about_detail-box">
-            <h3>
-              Company and Transport
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna as
-            </p>
-            <div class="d-flex  justify-content-end">
-              <a href="" class="quote-btn about-btn">
-                <img src="images/white-next.png" alt="">
-                <span>
-                  About More
-                </span>
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Sustainable_Development_Goal-es-02.jpg/1200px-Sustainable_Development_Goal-es-02.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Paz,Justicia e Instituciones Solidas</h3>
+		<p>Promover sociedades justas, pacificas e inclusivas.</p>
+		<a href="obj16.html">Leer Màs</a>
+	</div>
+</div>
 
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sustainable_Development_Goal_17-es.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Alianza para los Objetivos</h3>
+		<p>Revitalizar la Alianza Mundial para el Desarrollo Sostenible.</p>
+		<a href="obj17.html">Leer Màs</a>
+	</div>
+</div>
+</div>
+</div>	
 
-  </section>
+		<!-- footer -->
+		<div th:insert="/layouts/footer :: footer"></div>
 
-  <!-- end about section -->
+		<!-- footer -->
 
-  <!-- service section -->
-  <section class="service_section layout_padding">
-    <div class="container">
-      <div class="d-flex justify-content-center">
-        <h2 class="heading_style">
-          Our Services
-        </h2>
-      </div>
-      <div class="row layout_padding2-top">
-        <div class="col-md-4">
-          <div class="service_img-box s-b-1">
-            <img src="images/service-1.jpg" alt="">
-            <div class="d-flex">
-              <h3>
-                CARGO
-
-              </h3>
-            </div>
-          </div>
-          <div class="service-detail">
-            <p>
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.Excepteur
-            </p>
-            <div class="d-flex justify-content-end">
-              <a href="" class="service-btn">
-                See More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service_img-box s-b-2">
-            <img src="images/service-2.jpg" alt="">
-            <div class="d-flex">
-              <h3>
-                LOGISTIC SERVICE
-
-
-              </h3>
-            </div>
-          </div>
-          <div class="service-detail">
-            <p>
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.Excepteur
-            </p>
-            <div class="d-flex justify-content-end">
-              <a href="" class="service-btn">
-                See More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service_img-box s-b-3">
-            <img src="images/service-3.jpg" alt="">
-            <div class="d-flex">
-              <h3>
-                STORAGE
-
-
-              </h3>
-            </div>
-          </div>
-          <div class="service-detail">
-            <p>
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.Excepteur
-            </p>
-            <div class="d-flex justify-content-end">
-              <a href="" class="service-btn">
-                See More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end service section -->
-
-
-  <!-- shop section -->
-  <section class="shop_section">
-    <div class="container">
-      <div class="d-flex justify-content-center">
-        <h2 class="heading_style">
-          Our Shop
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="d-flex align-items-center h-100">
-            <div class="shop-detail">
-              <h5>
-                Everything You Need
-              </h5>
-              <p>
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="shop_img-box">
-            <img src="images/gift.jpg" alt="" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end shop section -->
-
-  <!-- testimonial section -->
-  <section class="client_section layout_padding">
-    <div class="d-flex justify-content-center">
-      <h2 class="heading_style">
-        Testimonial
-      </h2>
-    </div>
-    <div id="carouselExampleIndicator" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicator" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicator" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicator" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicator" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="client_box c-b-1">
-                  <div class="client_img">
-                    <img src="images/client.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="client_detail">
-                    <h5>
-                      Rock lu
-                    </h5>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical
-                      Latin literature from 45 BC, making it over 2000 years
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="client_box c-b-2">
-                  <div class="client_img">
-                    <img src="images/client.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="client_detail">
-                    <h5>
-                      Rock lu
-                    </h5>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical
-                      Latin literature from 45 BC, making it over 2000 years
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="client_box c-b-1">
-                  <div class="client_img">
-                    <img src="images/client.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="client_detail">
-                    <h5>
-                      Rock lu
-                    </h5>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical
-                      Latin literature from 45 BC, making it over 2000 years
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="client_box c-b-2">
-                  <div class="client_img">
-                    <img src="images/client.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="client_detail">
-                    <h5>
-                      Rock lu
-                    </h5>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical
-                      Latin literature from 45 BC, making it over 2000 years
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="client_box c-b-1">
-                  <div class="client_img">
-                    <img src="images/client.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="client_detail">
-                    <h5>
-                      Rock lu
-                    </h5>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical
-                      Latin literature from 45 BC, making it over 2000 years
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="client_box c-b-2">
-                  <div class="client_img">
-                    <img src="images/client.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="client_detail">
-                    <h5>
-                      Rock lu
-                    </h5>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical
-                      Latin literature from 45 BC, making it over 2000 years
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="client_box c-b-1">
-                  <div class="client_img">
-                    <img src="images/client.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="client_detail">
-                    <h5>
-                      Rock lu
-                    </h5>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical
-                      Latin literature from 45 BC, making it over 2000 years
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="client_box c-b-2">
-                  <div class="client_img">
-                    <img src="images/client.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="client_detail">
-                    <h5>
-                      Rock lu
-                    </h5>
-                    <p>
-                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                      classical
-                      Latin literature from 45 BC, making it over 2000 years
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-  <!-- end testimonial section -->
-
-
-
-  <!-- company section -->
-  <section class="company_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="d-flex align-items-center h-100">
-            <div class="company-detail">
-              <h3>
-                Company
-              </h3>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC, making it over 2000 yearsContrary to popular belief, Lorem Ipsum is not
-                simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
-                2000 years
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="company_img-box">
-            <img src="images/company.jpg" alt="" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end company section -->
-
-
-
-  <!-- contact section -->
-  <section class="contact_section layout_padding">
-    <div class="d-flex justify-content-center">
-      <h2 class="heading_style">
-        Contact us
-      </h2>
-    </div>
-    <div class="container layout_padding2-top">
-      <div class="row">
-        <div class="col-md-6">
-          <div id="map" class="h-100 w-100"></div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="contact_form-container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Your Name">
-              </div>
-              <div>
-                <input type="email" placeholder="Your Email">
-              </div>
-              <div>
-                <input type="text" placeholder="Your Phone">
-              </div>
-
-              <div>
-                <input type="text" class="message_input" placeholder="Message">
-              </div>
-              <div class="d-flex justify-content-end">
-                <button type="submit " class="">
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end contact section -->
-
-
-
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container ">
-      <div class="row  mb-3 pb-4">
-        <div class="col-md-3 info_logo">
-          <div class="logo-box">
-            <img src="images/logo-white.png" alt="">
-            <span>
-              Transportz
-            </span>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedconsectetur
-          </p>
-          <div class="info_social">
-            <div>
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/g-plus.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 info_address">
-          <h5>
-            Address
-          </h5>
-          <p>
-            Healing Center, 176 W Street name,
-            New York, NY 10014, US
-          </p>
-          <p>
-            (+71) 8522369417
-          </p>
-          <p>
-            (+71) 8522369417
-          </p>
-          <p>
-            <a href="">
-              transportz@gmail.com
-            </a>
-          </p>
-        </div>
-        <div class="col-md-3 info_links">
-
-          <div class="info_nav ">
-            <nav class="">
-              <ul>
-                <h5>
-                  Links
-                </h5>
-                <li>
-                  <a href="index.html"> Home</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="service.html"> Service</a>
-                </li>
-                <li>
-                  <a href="shop.html"> Shop</a>
-                </li>
-                <li>
-                  <a href="company.html"> Company</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact us</a>
-                </li>
-
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="col-md-3 info_news">
-          <h5>
-            Newsletter
-          </h5>
-          <form action="">
-            <div>
-              <input type="text" placeholder="Your Name">
-            </div>
-            <div>
-              <input type="email" placeholder="Email">
-            </div>
-            <div class="d-flex justify-content-end">
-              <button type="submit">
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-  <!-- end info section -->
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-
-
-  <script>
-    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-      });
-
-      var image = 'images/maps-and-flags.png';
-      var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-        map: map,
-        icon: image
-      });
-    }
-  </script>
-  <!-- google map js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-  </script>
-  <!-- end google map js -->
+	
+			</div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
