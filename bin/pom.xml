@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -64,15 +65,23 @@
 		</dependency>-->
 
 =======
+=======
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<!--
+>>>>>>> branch 'main' of https://github.com/Marquilokuras/ODS-2030.git
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.7</version>
-		<relativePath /> <!-- lookup parent from repository -->
+
+		<relativePath/> <!-- lookup parent from repository -->
+
 	</parent>
 	<groupId>ar.edu.unju.edm</groupId>
 	<artifactId>Tp03_Grupo01_2022</artifactId>
@@ -119,8 +128,29 @@
 			<artifactId>popper.js</artifactId>
 			<version>1.16.0</version>
 		</dependency>
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/Marquilokuras/ODS-2030.git
+=======
+
+		<!--<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		 <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>-->
+
+>>>>>>> branch 'main' of https://github.com/Marquilokuras/ODS-2030.git
 	</dependencies>
+
+
 
 	<build>
 		<plugins>

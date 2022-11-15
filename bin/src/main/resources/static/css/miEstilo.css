@@ -67,9 +67,11 @@ img{
   	padding: 50px;
 =======
 
-body {
-	background-color: rgb(49, 47, 47);
-	background-size: 100% 100%;
+body{
+	background:url("/video/Stripes.mp4");
+	background-repeat: no-repeat;
+	background-size: 500% 500%;
+
 }
 
 .navbar {
@@ -116,6 +118,7 @@ h3 {
 
 .card-border:hover {
 	transform: scale(1.05);
+
 }
 
 .card-text {

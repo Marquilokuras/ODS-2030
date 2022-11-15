@@ -7,10 +7,8 @@
 body {
 	 font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    
-   
-}
 
+}
 /*===================MENU==========================*/
 
  #menu a, button{
@@ -29,7 +27,6 @@ body {
 .carousel-inner {
     max-height:100%!important;
 }
-
 
 h3 {
 	color: rgb(40, 29, 143);
@@ -163,6 +160,9 @@ div.meta2{
    color: rgb(61, 61, 61);
 }
 
+
+
+
 /*=========================FOOTER================================*/
 /* footer */
 .footer {
@@ -171,5 +171,3 @@ div.meta2{
 	background-attachment: fixed;
 	color: #fff;
 }
-
-/* footer */

@@ -19,61 +19,31 @@
 <!-- contenido -->
 <body>
 
-	<div class="container">
+	
 		<div th:insert="/layouts/header :: header"></div>
-		<!--========================================================== -->
-                        <!-- SLIDER DE IMAGENES-->
-    <!--========================================================== -->
-    
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://www.un.org/sites/un2.un.org/files/field/image/children-uttar_pradesh-india.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://ipsnoticias.net/wp-content/uploads/2020/07/Hambre-aliment-Unicef-Laos-Jacqueline-Labrador.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://sites.google.com/site/planetanetatierra/_/rsrc/1540518377472/home/introduccion/1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://tarannaresponsable.com/wp-content/uploads/ODS-16.-1038x576.jpg" class="d-block w-100" alt="...">
-    </div>
-    
-  </div>
 
-    
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Leer mas</span>
-        </button>
-      </div>    
-    
-   </div> 
+
      <!--========================================================== -->
                         <!-- INTRODUCCION DE SERVICIOS-->
     <!--========================================================== -->
 
+    <div class="imagen">
+      <img src="https://www.elagoradiario.com/wp-content/uploads/2021/07/objetivos-de-desarrollo-sostenible.jpg" class="d-block w-100" alt="...">
+    </div>
+    
+    
+    
         <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
-    <h1 class="p-3 fs-2 border-top border-3">Este sitio tiene el próposito de mostrar
-							novedades e informacion acerca de los <span class="text-primary">Objetivo de Desarrollo Sostenible<span/></h1>
+        
+    <h1 class="p-3 fs-2 border-top border-3">
+    Este sitio tiene el próposito de concientizar
+	a la comunidad en general, sobre la importancia de los <span class="text-primary">Objetivos de Desarrollo Sostenible<span/></h1>
      <p class="p-3  fs-4">
-         <span class="text-primary">NUESTRO OBJETIVO GENERAL</span> es que los estudiantes puedan consolidar,
-							integrar y/o ampliar las capacidades y saberes que se
-							corresponden a las carreras de Técnico Informático, Técnico
-							Químico y Técnico en Minas vinculadas con la Agenda 2030 y los
-							Objetivos de Desarrollo Sostenible (ODS).        
-     </p>   
+         <h1 class="p-3 fs-2 border-top border-3">Somos un equipo de estudiantes de la Escuela de Minas de la Tecnicatura en Informatica y, hemos realizado en el marco de las practicas profesionalizantes este trabajo. Pretendemos que sea una guía de consulta, para ayudar a conservar nuestro planeta.</h1>   
     </section>
 
 
 		<section id="acordeon">
-
       <details>
          <summary>¿Que son los ODS?</summary>
          <p>Los Objetivos de Desarrollo Sostenible, o también conocido
@@ -144,7 +114,7 @@
 	<div class="contenido-card">
 		<h3>Hambre Cero</h3>
 		<p>Poner fin al hambre, lograr la seguridad alimentaria y la mejora de nutrición y promover la agricultura sostenible.</p>
-		<a href="obj2.html">Leer Màs</a>
+		<a href="obj2">Leer Màs</a>
 	</div>
 </div>
 
@@ -157,7 +127,7 @@
 	<div class="contenido-card">
 		<h3>Salud y Bienestar</h3>
 		<p>Garantizar una vida sana y promover el bienestar para todos en todas las edades.</p>
-		<a href="obj3.html">Leer Màs</a>
+		<a href="obj3">Leer Màs</a>
 	</div>
 </div >
 
@@ -168,11 +138,13 @@
 	<div class="contenido-card">
 		<h3>Educacion de Calidad</h3>
 		<p>Garantizar una educación inclusiva, equitativa y de calidad y promover oportunidades de aprendizaje y durante toda la vida para todos.</p>	
-	    <a href="obj4.html">Leer Màs</a>
+	    <a href="obj4">Leer Màs</a>
 	</div>
 </div>
-</div>
-<div class="container-card">
+
+
+
+
 <div class="card">
 	<figure>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Sustainable_Development_Goal-es-13.jpg/1200px-Sustainable_Development_Goal-es-13.jpg">
@@ -180,10 +152,11 @@
 	<div class="contenido-card">
 		<h3>Igualdad de Genero</h3>
 		<p>Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas</p>
-		<a href="obj5.html">Leer Màs</a>
+		<a href="obj5">Leer Màs</a>
 	</div>
 </div>
-
+</div>
+<div class="container-card">
 <div class="card">
 	<figure>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Sustainable_Development_Goal-es-12.jpg">
@@ -191,7 +164,7 @@
 	<div class="contenido-card">
 		<h3>Agua Limpia y Saneamientor</h3>
 		<p>Garantizar la disponibilidad de agua y su gestión sostenible y el saneamiento para todos.</p>
-		<a href="obj6.html">Leer Màs</a>
+		<a href="obj6">Leer Màs</a>
 	</div>
 </div>
 
@@ -202,8 +175,8 @@
 	<div class="contenido-card">
 		<h3>Energia Asequible y no contaminante</h3>
 		<p>Garantizar el acceso a una energía
-									asequible, segura, sostenible y moderna para todos.</p>
-		<a href="obj7.html">Leer Màs</a>
+	asequible, segura, sostenible y moderna para todos.</p>
+		<a href="obj7">Leer Màs</a>
 	</div>
 </div>
 
@@ -214,12 +187,10 @@
 	<div class="contenido-card">
 		<h3>Trabajo Decente y Crecimiento Economico</h3>
 		<p>Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos.</p>
-		<a href="obj8.html">Leer Màs</a>
+		<a href="obj8">Leer Màs</a>
 	</div>
 </div>
-</div>
 
-<div class="container-card">
 <div class="card">
 	<figure>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Sustainable_Development_Goal-es-09.jpg">
@@ -227,10 +198,13 @@
 	<div class="contenido-card">
 		<h3>Industria, Innovacion e Infraestructura</h3>
 		<p>Promover el desarrollo de industria, innovación e infraestructuras.</p>
-		<a href="obj9.html">Leer Màs</a>
+		<a href="obj9">Leer Màs</a>
 	</div>
 </div>
 	
+</div>
+
+<div class="container-card">
 <div class="card">
 	<figure>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sustainable_Development_Goal-es-08.jpg">
@@ -238,7 +212,7 @@
 	<div class="contenido-card">
 		<h3>Reduccion de las Desigualdades</h3>
 		<p>Reducir la desigualdad en y entre los países.</p>
-		<a href="obj10.html">Leer Màs</a>
+		<a href="obj10">Leer Màs</a>
 	</div>
 </div>
 
@@ -249,9 +223,12 @@
 	<div class="contenido-card">
 		<h3>Ciudades y Comunidades Sostenibles</h3>
 		<p>Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles.</p>
-		<a href="obj11.html">Leer Màs</a>
+		<a href="obj11">Leer Màs</a>
+		
 	</div>
 </div>
+
+
 
 <div class="card">
 	<figure>
@@ -261,7 +238,7 @@
 		<h3>Produccion y Consumo Responsables</h3>
 		<p>Garantizar modalidades de consumo y
 									producción sostenibles.</p>
-		<a href="obj12.html">Leer Màs</a>
+		<a href="obj12">Leer Màs</a>
 	</div>
 </div>
 
@@ -273,12 +250,14 @@
 	<div class="contenido-card">
 		<h3>Accion por el Clima</h3>
 		<p>Adoptar medidas urgentes para combatir el cambio climático y sus efectos.</p>
-		<a href="obj13.html">Leer Màs</a>
+
+		<a href="obj13">Leer Màs</a>
 	</div>
 </div>
-        </div>
+</div>
         
-        <div class="container-card">	
+
+<div class="container-card">	
 <div class="card">
 	<figure>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Sustainable_Development_Goal-es-04.jpg">
@@ -286,7 +265,7 @@
 	<div class="contenido-card">
 		<h3>Vida Submarina</h3>
 		<p>Conservar y utilizar en forma sostenible los océanos, los mares y los recursos marino para el desarrollo sostenible.</p>
-		<a href="obj14.html">Leer Màs</a>
+		<a href="obj14">Leer Màs</a>
 	</div>
 </div>
 
@@ -300,7 +279,7 @@
 									luchar contra la desertificación, detener e invertir la
 									degradación de las tierras y detener la pérdida de
 									biodiversidad.</p>
-		<a href="obj15.html">Leer Màs</a>
+		<a href="obj15">Leer Màs</a>
 	</div>
 </div>
 
@@ -311,7 +290,7 @@
 	<div class="contenido-card">
 		<h3>Paz,Justicia e Instituciones Solidas</h3>
 		<p>Promover sociedades justas, pacificas e inclusivas.</p>
-		<a href="obj16.html">Leer Màs</a>
+		<a href="obj16">Leer Màs</a>
 	</div>
 </div>
 
@@ -322,21 +301,24 @@
 	<div class="contenido-card">
 		<h3>Alianza para los Objetivos</h3>
 		<p>Revitalizar la Alianza Mundial para el Desarrollo Sostenible.</p>
-		<a href="obj17.html">Leer Màs</a>
+		<a href="obj17">Leer Màs</a>
 	</div>
 </div>
 </div>
-</div>	
+
+
 
 		<!-- footer -->
 		<div th:insert="/layouts/footer :: footer"></div>
 
-		<!-- footer -->
 
-	
-			</div>
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 
 </html>
+
