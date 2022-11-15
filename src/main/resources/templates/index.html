@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xlmns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width-device-width,initial-scale-1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 <link rel="shortcut icon" href="img/ODS.png">
 <title>OBJETIVOS DE DESARROLLO SOSTENIBLE</title>
-<link th:href="@{/css/miEstilo.css}" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="./css/miEstilo.css">
 <link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}"
 	rel="stylesheet" type="text/css">
 
@@ -15,59 +19,38 @@
 <!-- contenido -->
 <body>
 
-	<div class="container">
+	
 		<div th:insert="/layouts/header :: header"></div>
+  
+     <!--========================================================== -->
+                        <!-- INTRODUCCION DE SERVICIOS-->
+    <!--========================================================== -->
 
-		<!-- AVISO Y ASIDE -->
+        <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Este sitio tiene el próposito de concientizar
+							a la comunidad en general, sobre la importancia de los <span class="text-primary">Objetivos de Desarrollo Sostenible<span/></h1>
+     <p class="p-3  fs-4">
+         <h1 class="p-3 fs-2 border-top border-3">Somos un equipo de estudiantes de la Escuela de Minas de la Tecnicatura en Informatica y, hemos realizado en el marco de las practicas profesionalizantes este trabajo. Pretendemos que sea una guía de consulta, para ayudar a conservar nuestro planeta.</h1>   
+    </section>
 
-		<section class="aviso">
-			<div class="container w-30">
-				<div class="row justify-content-md-center py-3">
-					<div class="col text-center">
-						<p class="text">Este sitio tiene el próposito de mostrar
-							novedades e informacion acerca de los objetivos de desarrollo
-							sostenible</p>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<aside class="container-fluid">
-			<div id="noticia" class="container w-70 pl-5">
-				<div class="row align-items-center">
-					<div class="col-sm text-light p-3 text-center">
-						<p>
-							OBJETIVO GENERAL <br> Que los estudiantes puedan consolidar,
-							integrar y/o ampliar las capacidades y saberes que se
-							corresponden a las carreras de Técnico Informático, Técnico
-							Químico y Técnico en Minas vinculadas con la Agenda 2030 y los
-							Objetivos de Desarrollo Sostenible (ODS).
-						</p>
-					</div>
-					<div class="col-sm p-3">
-						<!-- aca va el logo de moni -->
-						<img src="img/ODS.png"
-							class="w-100 rounded-circle mx-auto d-block" alt="">
-					</div>
-				</div>
-			</div>
-		</aside>
+		<section id="acordeon">
 
-		<!-- AVISO Y ASIDE -->
-		<br>
-		<h4>Los Objetivos de Desarrollo Sostenible, o también conocido
+      <details>
+         <summary>¿Que son los ODS?</summary>
+         <p>Los Objetivos de Desarrollo Sostenible, o también conocido
 			por sus siglas ODS, fueron adoptados por las Naciones Unidas en el
 			año 2015 como un llamado global para proteger nuestro planeta y
 			asegurar que todas las personas tengan paz y prosperidad para 2030.
 			Se basa en 17 objetivos que sirven para solventar las principales
 			problemáticas mundiales actuales, desde la pobreza y la desigualdad
 			hasta el cambio climático. En pocas palabras es un mapa de trabajo
-			para conseguir un mundo y futuro sostenible para todos.</h4>
+			para conseguir un mundo y futuro sostenible para todos.</p>
+      </details>
 
-		<br>
-		<h3 class="text-center h1">¡Para qué sirve los ODS?</h3>
-		<br>
-		<h4>Los Objetivos de Desarrollo Sostenible consisten en instar a
+      <details>
+         <summary>¿Para que sirven los ODS?</summary>
+         <p>Los Objetivos de Desarrollo Sostenible consisten en instar a
 			todos los países, ya sean ricos, pobres o de ingresos medianos, a
 			adoptar medidas para promover la prosperidad al tiempo que protegen
 			el planeta. Reconocen que las iniciativas para acabar con la pobreza
@@ -75,248 +58,237 @@
 			económico y aborden una serie de necesidades sociales, entre las que
 			cabe señalar la educación, la salud, la protección social y las
 			oportunidades de empleo, a la vez que luchan contra el cambio
-			climático y promueven la protección del medio ambiente.</h4>
-		<br>
-		<h3 class="text-center h1">Objetivos de Desarrollo Sostenible:</h3>
-					<!-- OBJETIVOS -->
+			climático y promueven la protección del medio ambiente.</p>
+      </details>
 
-		<section class="cursos">
-			<div class="container-md w-30 p-5">
+      <details>
+         <summary>¿Quién decide los objetivos de desarrollo sostenible?</summary>
+         <p>Los líderes mundiales en el marco de las Naciones Unidas son los que deciden estos objetivos teniendo en cuenta los principales retos a los que se enfrenta el conjunto de la humanidad.</p>
+      </details>
 
-				<div class="row">
-					<!--<h3 class="text-center h1">OBJETIVOS</h3>-->
-				</div>
 
-				<div class="row">
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 1I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">FIN DE LA POBREZA</h5>
-								<p class="card-text">Poner fin a la pobreza en todas sus formas en todo el mundo.</p>
-								<a href="obj1" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 2I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">HAMBRE CERO</h5>
-								<p class="card-text">Poner fin al hambre, lograr la seguridad alimentaria y la mejora de nutrición y promover la agricultura sostenible</p>
-								<a href="obj2" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 3I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">SALUD Y BIENESTAR</h5>
-								<p class="card-text">Garantizar una vida sana y promover el bienestar para todos en todas las edades.</p>
-								<a href="obj3" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 4I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">EDUCACIÓN DE CALIDAD</h5>
-								<p class="card-text">Garantizar una educación inclusiva, equitativa y de calidad y promover oportunidades de aprendizaje y durante toda la vida para todos.</p>
-								<a href="obj4" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 5I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">IGUALDAD DE GÉNERO</h5>
-								<p class="card-text">Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas.</p>
-								<a href="obj5" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 6I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">AGUA LIMPIA Y SANEAMIENTO</h5>
-								<p class="card-text">Garantizar la disponibilidad de agua y su gestión sostenible y el saneamiento para todos.</p>
-								<a href="obj6" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 7.jpg" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">ENERGÍA ASEQUIBLE Y NO CONTAMINANTE</h5>
-								<p class="card-text">Garantizar el acceso a una energía
+		<details>
+         <summary>¿De dónde provienen?</summary>
+         <p>Los Objetivos Mundiales reemplazan a los Objetivos de Desarrollo del Milenio (ODM), los cuales se establecieron hace 15 años y reunieron al mundo en torno a un programa común: abordar la indignidad de la pobreza. </p>
+      </details>
+      
+   </section >
+		
+		<!--CARTASSSSSSSSS-->
+		
+		<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-container mySwiper">
+        
+		<div class="title-cards">
+		<h2>Objetivos de Desarrollo Sustentable</h2>
+	</div>
+	
+<div class="container-card">
+	
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sustainable_Development_Goal-es-17.jpg/245px-Sustainable_Development_Goal-es-17.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Fin de la Pobreza</h3>
+		<p>Poner fin a la pobreza en todas sus formas en todo el mundo</p>
+		<a href="obj1" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Sustainable_Development_Goal-es-16.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Hambre Cero</h3>
+		<p>Poner fin al hambre, lograr la seguridad alimentaria y la mejora de nutrición y promover la agricultura sostenible.</p>
+		<a href="obj2" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sustainable_Development_Goal-es-15.jpg/1200px-Sustainable_Development_Goal-es-15.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Salud y Bienestar</h3>
+		<p>Garantizar una vida sana y promover el bienestar para todos en todas las edades.</p>
+		<a href="obj3" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div >
+
+<div class="card" >
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sustainable_Development_Goal-es-14.jpg/1200px-Sustainable_Development_Goal-es-14.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Educacion de Calidad</h3>
+		<p>Garantizar una educación inclusiva, equitativa y de calidad y promover oportunidades de aprendizaje y durante toda la vida para todos.</p>	
+	    <a href="obj4" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+</div>
+<div class="container-card">
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Sustainable_Development_Goal-es-13.jpg/1200px-Sustainable_Development_Goal-es-13.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Igualdad de Genero</h3>
+		<p>Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas</p>
+		<a href="obj5" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Sustainable_Development_Goal-es-12.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Agua Limpia y Saneamientor</h3>
+		<p>Garantizar la disponibilidad de agua y su gestión sostenible y el saneamiento para todos.</p>
+		<a href="obj6" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sustainable_Development_Goal-es-11.jpg/1200px-Sustainable_Development_Goal-es-11.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Energia Asequible y no contaminante</h3>
+		<p>Garantizar el acceso a una energía
 									asequible, segura, sostenible y moderna para todos.</p>
-								<a href="obj7" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 8I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">TRABAJO DECENTE Y CRECIMIENTO ECONÓMICO</h5>
-								<p class="card-text">Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos.</p>
-								<a href="obj8" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 9I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">INDUSTRIA, INNOVACIÓN E INFRAESTRUCTURA</h5>
-								<p class="card-text">Promover el desarrollo de industria, innovación e infraestructuras.</p>
-								<a href="obj9" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 10I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">REDUCCIÓN DE LAS DESIGUALDADES</h5>
-								<p class="card-text">Reducir la desigualdad en y entre los países.</p>
-								<a href="obj10" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 11I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">CIUDADES Y COMUNIDADES SOSTENIBLES</h5>
-								<p class="card-text">Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles.</p>
-								<a href="obj11" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
+		<a href="obj7" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
 
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 12.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">PRODUCCION Y CONSUMO RESPONSABLE</h5>
-								<p class="card-text">Garantizar modalidades de consumo y
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Sustainable_Development_Goal-es-10.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Trabajo Decente y Crecimiento Economico</h3>
+		<p>Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos.</p>
+		<a href="obj8" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+</div>
+
+<div class="container-card">
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Sustainable_Development_Goal-es-09.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Industria, Innovacion e Infraestructura</h3>
+		<p>Promover el desarrollo de industria, innovación e infraestructuras.</p>
+		<a href="obj9" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+	
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sustainable_Development_Goal-es-08.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Reduccion de las Desigualdades</h3>
+		<p>Reducir la desigualdad en y entre los países.</p>
+		<a href="obj10" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Sustainable_Development_Goal-es-07.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Ciudades y Comunidades Sostenibles</h3>
+		<p>Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles.</p>
+		<a href="obj11" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Sustainable_Development_Goal-es-06.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Produccion y Consumo Responsables</h3>
+		<p>Garantizar modalidades de consumo y
 									producción sostenibles.</p>
-								<a href="obj12" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 13I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">ACCIÓN POR EL CLIMA</h5>
-								<p class="card-text">Adoptar medidas urgentes para combatir el cambio climático y sus efectos.</p>
-								<a href="obj13" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 14I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">VIDA SUBMARINA</h5>
-								<p class="card-text">Conservar y utilizar en forma sostenible los océanos, los mares y los recursos marino para el desarrollo sostenible.</p>
-								<a href="obj14" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
+		<a href="obj12" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
 
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 15.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">VIDA DE ECOSISTEMAS TERRESTRES</h5>
-								<p class="card-text">Gestionar sosteniblemente los bosques,
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sustainable_Development_Goal-es-05.jpg/1200px-Sustainable_Development_Goal-es-05.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Accion por el Clima</h3>
+		<p>Adoptar medidas urgentes para combatir el cambio climático y sus efectos.</p>
+		<a href="obj13" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+        </div>
+        
+        <div class="container-card">	
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Sustainable_Development_Goal-es-04.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Vida Submarina</h3>
+		<p>Conservar y utilizar en forma sostenible los océanos, los mares y los recursos marino para el desarrollo sostenible.</p>
+		<a href="obj14" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sustainable_Development_Goal-es-03.jpg/1200px-Sustainable_Development_Goal-es-03.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Vida de Ecosistemas Terrestres</h3>
+		<p>Gestionar sosteniblemente los bosques,
 									luchar contra la desertificación, detener e invertir la
 									degradación de las tierras y detener la pérdida de
 									biodiversidad.</p>
-								<a href="obj15" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 16I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">PAZ, JUSTICIA E INSTITUCIONES SÓLIDAS</h5>
-								<p class="card-text">Promover sociedades justas, pacificas e inclusivas.</p>
-								<a href="obj16" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-6 col-sm pt-5">
-						<div class="card h-100 card-border" style="width: 100%;">
-							<img src="./img/ODS 17I.png" height="200px" class="card-img-top"
-											alt="">
-							<div class="card-body">
-								<h5 class="card-title">ALIANZAS PARA LOGRAR LOS OBJETIVOS</h5>
-								<p class="card-text">Revitalizar la Alianza Mundial para el Desarrollo Sostenible.</p>
-								<a href="obj17" target="_blank" class="btn btn-primary">Leer
-									más</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<a href="obj15" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Sustainable_Development_Goal-es-02.jpg/1200px-Sustainable_Development_Goal-es-02.jpg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Paz,Justicia e Instituciones Solidas</h3>
+		<p>Promover sociedades justas, pacificas e inclusivas.</p>
+		<a href="obj16" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+
+<div class="card">
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sustainable_Development_Goal_17-es.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Alianza para los Objetivos</h3>
+		<p>Revitalizar la Alianza Mundial para el Desarrollo Sostenible.</p>
+		<a href="obj17" target="_blank" class="btn btn-primary">Leer	más</a>
+	</div>
+</div>
+</div>
+</div>	
 
 		<!-- footer -->
 		<div th:insert="/layouts/footer :: footer"></div>
@@ -325,7 +297,9 @@
 
 	
 			</div>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
+
