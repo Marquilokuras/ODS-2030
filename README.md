@@ -1,6 +1,6 @@
 # ODS-2030
 
-**Integrantes:**
+**Integrantes Programación:**
 
 **- Marcos Quinteros**
 
