@@ -91,6 +91,16 @@ div.container12 {
 	color: #fb9553;
 }
 
+/* IMAGENES DE LOS OBJ */
+
+img{
+	width: 100%; /*ACA ES DONDE YO AGREGO PARA QUE LAS IMAGENES QUEDEN EN EL MEDIO EN LOS OBJ PERO CAMBIA TU LOGO */
+}
+
+div {
+    text-align: center;
+ }
+
 
 /* Minas */
 div.img-fluid rounded {
@@ -111,9 +121,6 @@ div.img-fluid rounded {
 	justify-content: center;
 }
 
-div.meta2{
-	color:gold;
-}
 /*CARTAAAAAAAAAAAAAAAAAAAAAAA*/
 /*Cards*/
 .container-card{
@@ -212,9 +219,6 @@ div.meta2{
    background: white;
    color: rgb(61, 61, 61);
 }
-
-
-
 
 /*=========================FOOTER================================*/
 /* footer */
